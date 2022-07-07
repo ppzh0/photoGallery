@@ -1,77 +1,77 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-*, ::before, ::after {
+*,
+::after,
+::before {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
-html, body {
+body,
+html {
     padding: 0;
-    margin: 0;
+    margin: 0
 }
-
 
 main {
-    margin: 1em;
+    margin: 1em
 }
 
-
-section , main{
-    display: grid;
+main,
+section {
+    display: grid
 }
 
 main:not(.infoWarn) {
-    grid-template-columns: 1fr 80%;
+    grid-template-columns: 1fr 80%
 }
 
-section:not(section span) {
+section:not(sectionspan) {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-content: center;
-    gap: 20em 1em;
+    gap: 20em 1em
 }
 
 section img {
-    box-shadow: 0 0 0.7rem 0.2rem rgba(78, 69, 69, 0.836);
-    border-radius: 5px;
-    /* width: clamp(30%, 85%, 90%);
-    height: clamp(55%, 65%, 95%); */
+    box-shadow: 0 0 .7rem .2rem rgba(78, 69, 69, .836);
+    border-radius: 5px
 }
 
 header {
-    position: relative;
+    position: relative
 }
 
 .p-F {
     position: fixed;
     height: 100%;
     width: 250px;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 .p-F h1 {
-    margin: 5px auto 1rem;
+    margin: 5px auto 1rem
 }
 
-.p-F > div {
+.p-F>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    justify-items: center;
+    justify-items: center
 }
 
 .ExceptImg {
-    box-shadow: 0 0 .7rem 0.2rem rgba(79, 79, 79, 79%);
+    box-shadow: 0 0 .7rem .2rem rgba(79, 79%, 79%, 79%);
     margin: .6rem;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 #siteInfo {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr)
 }
 
 .infoWarn {
@@ -80,5 +80,5 @@ header {
     justify-items: center;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: center
 }
