@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="assets/css/style.main.css">
     <link rel="stylesheet" href="assets/css/style.query.css">
     <style>
+        @font-face {
+            font-family: Poppins;
+            src: url(assets/src/fonts/Poppins.ttf);
+        }
+
+        body {
+            font-family: Poppins, 'Courier New', Courier, monospace;
+        }
+
         #linkUp {
             position: fixed;
             top: 93%;
@@ -19,6 +28,7 @@
 
         #linkUp a::before {
             content: url(assets/src/img/keyboard_double_arrow_up_black_24dp.svg);
+            color: #000;
         }
 
         a[onClick]::before {
@@ -61,7 +71,7 @@
                     <div id="siteInfo">
                         <h2>Disclaimer</h2>
                         <p>
-                            All image are from <a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">Lorem Picsum</a> and all of them are under CopyRight Law
+                            All image are from <a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">Lorem Picsum</a> and all of them are used under <abbr title="CopyRight">&copy;</abbr> Law
                         </p>
                     </div>
                 </footer>
